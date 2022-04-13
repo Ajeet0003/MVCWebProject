@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@DateTime.Now
+<br />
+2 + 3
+<br />
+@*@(2+3)*@
+<br />
+@{
+    var x = 20;
+    var y = 30;
+    var z = x + y;
+    Write(z);
+    <br />
+    @z;
+    <br />
+}
+Ajeet
+@@Ajeet
+@{
+    int a = 20;
+    int b = 23;
+}
+@if (a > b)
+{
+@a<span>is max</span>
+}
+else
+{
+
+@b<span>is max</span>
+}
+@for (int i = 0; i < 20; i++)
+{
+    @i<br />
+}
+@{
+
+    string[] cities = { "delhi", "patna", "Mumbai" };
+
+}
+<h2>city list</h2>
+<ul>
+    @foreach (var item in cities)
+    {
+        <li>@item</li>
+    }
+
+</ul>

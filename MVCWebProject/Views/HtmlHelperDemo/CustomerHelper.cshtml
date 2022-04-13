@@ -1,0 +1,22 @@
+﻿@using MVCWebProject.Models
+
+@*@model MVCWebProject.Models.Student*@
+
+@{
+    ViewBag.Title = "CustomerHelper";
+}
+
+<h2>CustomerHelper</h2>
+
+@CustomHelper.Button()
+<br />
+<br />
+
+@CustomHelper.Button(type: "button ", id: "btn2", name: "btn2", value: "Click")
+<br />
+<br />
+@CustomHelper.Image("/Content/images/Response.png", "Image Test",width:"200px")
+<img src="~/Content/images/Response.png"/>
+
+<br />
+<br />
